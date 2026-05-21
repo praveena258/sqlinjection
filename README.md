@@ -39,15 +39,16 @@ Select Multidae from the menu listed as shown above. The page is displayed as be
 Click on the menu Login/Register and register for an account
 ##  OUTPUT
 
+<img width="827" height="897" alt="Screenshot 2026-05-21 203302" src="https://github.com/user-attachments/assets/f5bf5208-f32e-4a58-9f5e-a3ef78549ae2" />
 
 
 Click on the link “Please register here”
 ##  OUTPUT
 
 
+<img width="684" height="630" alt="Screenshot 2026-05-21 205122" src="https://github.com/user-attachments/assets/31fed072-9c8e-4d3e-9421-5c6ec715770f" />
 
-Click on “Create Account” to display the following page:
-##  OUTPUT
+
 
 
 The login structure we will use in our examples is straightforward. It contains two input fields (username and password), which are both vulnerable. The back-end content creates a query to approve the username and secret key given by the client. Here is an outline of the page rationale:
@@ -58,48 +59,17 @@ The login structure we will use in our examples is straightforward. It contains 
 ##  OUTPUT
 
 
+<img width="916" height="867" alt="Screenshot 2026-05-21 204253" src="https://github.com/user-attachments/assets/71f1277a-2a87-4189-ab3f-fa2fd2cab1fd" />
 
 Click “Login”. The logged in page will show as below:
 ##  OUTPUT
+<img width="942" height="866" alt="Screenshot 2026-05-21 204400" src="https://github.com/user-attachments/assets/4ea23f92-d073-415d-b6f6-93c2304a2e8f" />
 
-
-<img width="1100" height="903" alt="image" src="https://github.com/user-attachments/assets/5342e8e8-82be-46eb-9598-fda3c1c4f8d6" />
 
 If error faced in registration follow the following steps in metasploitable 2:
 
 
 This issue is caused by a misconfiguration in the config.inc located in the /var/www/mutillidae folder on Metasploitable 2 VM.
-
-Edit config.inc
-Edit config.inc file located in /var/www/mutillidae folder on Metasploitable 2 by typing the following commands [one at the time]:
-cd /
-sudo nano /var/www/mutillidae/config.inc
-Type msfadmin when prompted for the root password. 
-Once nano opens config.inc file, look for the line $dbname = ‘metasploit’ as shown in Figure  below:
-##  OUTPUT
-
-
-Replace ‘metasploit’ with ‘owasp10’ and make sure the lines end with semicolon ; as shown in Figure
-##  OUTPUT
-
-
-
-
-Save and exit the config.inc
-Save than exit the config.inc file by typing CTRL+X keys on your keyboard and the Y [Enter] when prompted to save the file
-Restart the Apache server
-To restart Apache, type the following command in the terminal. Alternatively, you can just reboot Metasploitalbe 2 VM.
-sudo /etc/init.d/apache2 reload
-##  OUTPUT
-
-
-
-
-# Reset Mutillidae database
-Refresh the page then clicking on the Reset DB menu option to reset the Mutillidae database [Figure ]. Click OK when prompted.
-##  OUTPUT
-
-
 
 
 
@@ -118,6 +88,7 @@ Now after logging out you will see the login page. In the login page give ganesh
 Click the login button and you will see it enter into the administrator page.
 #OUTPUT
 
+<img width="684" height="630" alt="Screenshot 2026-05-21 205122" src="https://github.com/user-attachments/assets/96e5dd7f-9a87-4eeb-94d8-b66609f9fd01" />
 
 
 ## Union-based SQL injection

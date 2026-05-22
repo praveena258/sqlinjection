@@ -25,9 +25,18 @@ SQL Injection is a sort of infusion assault that makes it conceivable to execute
 Identify IP address using ifconfig in Metasploitable2
 #OUTPUT
 <img width="686" height="397" alt="image" src="https://github.com/user-attachments/assets/e9bf21f7-dcdf-4d49-9af7-22fbf905e256" />
+Command: ifconfig
 
-Use the above ip address to access the apache webserver of Metasploitable2 from kali/parrot linux. In Kali Linux use the ip address in a web browser.
-##  OUTPUT
+Explanation (simple):
+
+ifconfig = interface configuration
+This command shows the network settings of the machine.
+It displays details like:
+IP address (the machine’s address on the network)
+Subnet mask
+MAC address
+Network interface names like eth0
+
 
 
 Select Multidae from the menu listed as shown above. The page is displayed as below:
